@@ -1,195 +1,190 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>تابینو - ثبت سفارش</title>
-	<meta charset="UTF-8">
-	<link rel="icon" href="assets/images/favicon.png">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/nprogress.css">
-	<link rel="stylesheet" href="assets/css/swiper.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="ثبت سفارش">
-	<meta property="og:site_name" content="تابینو">
-	<meta property="og:url" content="http://persiandesign.ml">
-	<meta property="og:description" content="تیم تابینو آماده ارائه خدمات طراحی کارت ویزیت، بنر، اینفوگرافیک ،طراحی سایت،برنامه نویسی به شما عزیزان می باشد.">
-	<meta property="og:type" content="website">
-	<meta name="google-site-verification" content="LNZMRznnHkF-IrpATS1bKfbfq8U4Elf19b7-M0W7zPk" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/validator/10.11.0/validator.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.6.0/dist/sweetalert2.all.min.js" integrity="sha256-m2M+dEEadA5s0ctJeaKgVvRQfsyHJEPMPav6sQMwqhQ=" crossorigin="anonymous"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>تابینو - ثبت سفارش</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/nprogress.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="ثبت سفارش">
+    <meta property="og:site_name" content="تابینو">
+    <meta property="og:url" content="http://persiandesign.ml">
+    <meta property="og:description" content="تیم تابینو آماده ارائه خدمات طراحی کارت ویزیت، بنر، اینفوگرافیک ،طراحی سایت،برنامه نویسی به شما عزیزان می باشد.">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="LNZMRznnHkF-IrpATS1bKfbfq8U4Elf19b7-M0W7zPk" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/10.11.0/validator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.6.0/dist/sweetalert2.all.min.js" integrity="sha256-m2M+dEEadA5s0ctJeaKgVvRQfsyHJEPMPav6sQMwqhQ=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
-	<div class="main-container">
-		<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">صفحه اصلی</a></li>
-				<li><a href="#">لیست خدمات</a></li>
-				<li><a href="order.html">سفارش پروژه</a></li>
-				<li><a href="#" id="onclickcall">تماس با ما</a></li>
-				<li><a href="#">درباره ما</a></li>
-			</ul>
-			<div id="toggle">
-			  <div class="one"></div>
-			  <div class="two"></div>
-			  <div class="three"></div>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<!-- bottom is html project for we call -->
-		<div id="parent-we-call">
-				<div id="we-call">
-					<p style="text-align: center;border-bottom: 1px solid white;margin-bottom: 20px;">
-						<span id="span-times-call"><i class="fas fa-times fa-1x times-callwe"></i></span>
-						در صورت بروز مشکل یا ثبت انتقادات و پیشنهادات باما در تماس باشید
-						<br>
-						سپاس فراوان
-						<br><br>
-					</p>
-					<p>
-						شماره تماس:
-						<br><br>
-						<p>
-							محمد مسعودی ( مدیر و برنامه نویس وب سایت ) : <span class="selection">09911729079</span>
-						</p>
-						<br>
-						<p>
-							امیررضا همتی (برنامه نویس وب سایت) : <span class="selection">09399440750</span>
-						</p>
-					</p>
-					<br>
-					<div id="button-time">
-						<button id="send" class="button-time" type="button">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							خروج
-						</button>
-					</div>
-				</div>
-			</div>
+    <div class="main-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="#">لیست خدمات</a></li>
+                    <li><a href="order.html">سفارش پروژه</a></li>
+                    <li><a href="#" id="onclickcall">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+                <div id="toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- bottom is html project for we call -->
+            <div id="wecall-parent">
+                <div id="wecall">
+                    <span class="closefirst-wecall" style="cursor: pointer;font-size:30px;">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <br />
+                    <p id="ptag-one" style="text-align:center;"></p>
+                    <p id="ptag-two" class="align-center"><i class="fas fa-heart" style="color:red;"></i></p>
+                    <hr style="color:white" />
+                    <p id="ptag-three"></p>
+                    <br />
+                    <p id="number-phone1">09911729079</p>
+                    <p id="number-phone2">09399440750</p>
+                    <br />
+                    <button id="send" class="btn-close" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        خروج
+                    </button>
+                </div>
+            </div>
 
-		<h2 class="introduction-title">فرم ثبت سفارش</h2>
-		<section class="contact-form">
-			<form enctype="text/plain">
-	            <div class="row">
-	                <label for="name" class="require">نام</label>
-					<input id="name" type="text" name="" autocomplete="off" placeholder="نام خودتون رو وارد کنید">
-	            </div>
-				<div class="row">
-					<label for="phone" class="require">شماره تماس</label>
-					<input id="phone" type="text" name="" autocomplete="off" placeholder="یه شماره که بتونیم باهاتون در ارتباط باشیم">
-				</div>
-				<div class="row">
-					<label for="email">ایمیل</label>
-					<input id="email" type="text" name="" autocomplete="off" placeholder="اگر آدرس ایمیل دارید وارد کنید">
-				</div>
-				<div class="row">
-					<label for="telegram">آیدی تلگرام</label>
-					<input id="telegram" type="text" name="" autocomplete="off" placeholder="اگر ایدی تلگرام دارید وارد کنید">
-				</div>
-				<div class="row">
-					<label for="description" class="require">توضیحات</label>
-					<textarea name="" id="description" cols="30" rows="10" placeholder="درخواست خودتون رو به صورت کامل بنویسید "></textarea>
-				</div>
-					<button id="send" class="send-order" type="button" onclick="sendMail();" name="">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						ثبت سفارش
-					</button>
 
-	        </form>
-		</section>
-	</main>
-	<footer>
-		<p>  تمامی حقوق برای تیم تابینو محفوظ می باشد. &copy;</p>
-	</footer>
-	</div>
-<script src="assets/js/nprogress.js"></script>
-<script>
-	NProgress.start();
-	NProgress.set(0.4);
-	NProgress.inc();
-	NProgress.configure({ ease: 'ease', speed: 2000 });
-	NProgress.configure({ parent: 'body' });
-	NProgress.done();
-	$(document).ready(function () {
-		$('#onclickcall').click(function (e) {
-				$('#we-call').fadeIn(1000);
-			});
+            <h2 class="introduction-title">فرم ثبت سفارش</h2>
+            <section class="contact-form">
+                <form enctype="text/plain">
+                    <div class="row">
+                        <label for="name" class="require">نام</label>
+                        <input id="name" type="text" name="" autocomplete="off" placeholder="نام خودتون رو وارد کنید">
+                    </div>
+                    <div class="row">
+                        <label for="phone" class="require">شماره تماس</label>
+                        <input id="phone" type="text" name="" autocomplete="off" placeholder="یه شماره که بتونیم باهاتون در ارتباط باشیم">
+                    </div>
+                    <div class="row">
+                        <label for="email">ایمیل</label>
+                        <input id="email" type="text" name="" autocomplete="off" placeholder="اگر آدرس ایمیل دارید وارد کنید">
+                    </div>
+                    <div class="row">
+                        <label for="telegram">آیدی تلگرام</label>
+                        <input id="telegram" type="text" name="" autocomplete="off" placeholder="اگر ایدی تلگرام دارید وارد کنید">
+                    </div>
+                    <div class="row">
+                        <label for="description" class="require">توضیحات</label>
+                        <textarea name="" id="description" cols="30" rows="10" placeholder="درخواست خودتون رو به صورت کامل بنویسید "></textarea>
+                    </div>
+                    <button id="send" class="send-order" type="button" onclick="sendMail();" name="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        ثبت سفارش
+                    </button>
 
-			$('#button-time , #span-times-call').click(function (e) {
-				e.preventDefault
-				$('#we-call').fadeOut(1000);
-			});
-			$("#toggle").click(function () {
-				$(this).toggleClass("on");
-				$("nav ul").toggleClass("showmenu");
-				$("main , footer").toggleClass("opacity")
-				$("main , footer").click(function () {
-					$("#toggle").removeClass("on")
-					$("nav ul").removeClass("showmenu")
-					$("main , footer").removeClass("opacity")
-				})
-			});
-		});
-function sendMail(){
-	var name = document.getElementById('name');
-	var phone = document.getElementById('phone');
-	var email = document.getElementById('email');
-	var telegram = document.getElementById('telegram');
-	var description = document.getElementById('description');
-	if (validator.isEmpty(name.value)){
-		Swal.fire({
-		  type: 'error',
-		  title: '  ... اوه',
-		  text: 'نام نمیتونه خالی باشه',
-		  confirmButtonText:'باشه'
-		})
-	}else if(validator.isMobilePhone(phone.value,'fa-IR') === false){
-		Swal.fire({
-		  type: 'error',
-		  title: '  ... اوه',
-		  text: 'یا شماره رو اشتباه زدی یا وارد نکردی',
-		  confirmButtonText:'باشه'
-		})
-	}else if(validator.isEmpty(description.value)) {
-		Swal.fire({
-		  type: 'error',
-		  title: '  ... اوه',
-		  text: 'درخواست خودت رو کامل و دقیق وارد کن',
-		  confirmButtonText:'باشه'
-		})
-	}else{
-		Email.send({
-	    SecureToken : "35a80d7b-2315-422e-a72c-bcdfbe8a3704",
-	    To : 'mohammad.masoudi59@gmail.com',
-	    From : "persiandesign.sender@gmail.com",
-	    Subject : name.value,
-	    Body : "تلفن : " + "<b>" + phone.value + "</b>"  + "<br/> ایمیل : " + "<b>" + email.value + "</b>" + "<br/> ایدی تلگرام : " + "<b>" + telegram.value + "</b>" + "<br/> توضیحات :  <br/>" + description.value 
-		}).then(
-		  message => 
-  		Swal.fire({
-		  position: 'center-center',
-		  type: 'success',
-		  title: '.پیام با موفقیت ارسال شد',
-		  showConfirmButton: false,
-		  timer: 2200
-		}),
-		  name.value = "" ,
-		  phone.value = "" ,
-		  email.value = "" ,
-		  telegram.value = "" , 
-		  description.value = ""    
-		);
-	}
-}
-</script>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>  تمامی حقوق برای تیم تابینو محفوظ می باشد. &copy;</p>
+        </footer>
+    </div>
+    <script src="assets/js/nprogress.js"></script>
+    <script>
+        NProgress.start();
+        NProgress.set(0.4);
+        NProgress.inc();
+        NProgress.configure({ ease: 'ease', speed: 2000 });
+        NProgress.configure({ parent: 'body' });
+        NProgress.done();
+        $(document).ready(function () {
+            $('#onclickcall').click(function (e) {
+                $("nav ul").removeClass("showmenu");
+                $('#wecall').fadeIn(1000);
+                $("#toggle").toggleClass("on")
+            });
+
+            $('.btn-close , .closefirst-wecall').click(function (e) {
+                $('#wecall').fadeOut(1000);
+            });
+
+            $("#toggle").click(function () {
+                $("#wecall").fadeOut(1000);
+                $(this).toggleClass("on");
+                $("nav ul").toggleClass("showmenu");
+                $("main , footer").toggleClass("opacity")
+                $("main , footer").click(function () {
+                    $("#toggle").removeClass("on")
+                    $("nav ul").removeClass("showmenu")
+                    $("main , footer").removeClass("opacity")
+                })
+            });
+        });
+        function sendMail() {
+            var name = document.getElementById('name');
+            var phone = document.getElementById('phone');
+            var email = document.getElementById('email');
+            var telegram = document.getElementById('telegram');
+            var description = document.getElementById('description');
+            if (validator.isEmpty(name.value)) {
+                Swal.fire({
+                    type: 'error',
+                    title: '  ... اوه',
+                    text: 'نام نمیتونه خالی باشه',
+                    confirmButtonText: 'باشه'
+                })
+            } else if (validator.isMobilePhone(phone.value, 'fa-IR') === false) {
+                Swal.fire({
+                    type: 'error',
+                    title: '  ... اوه',
+                    text: 'یا شماره رو اشتباه زدی یا وارد نکردی',
+                    confirmButtonText: 'باشه'
+                })
+            } else if (validator.isEmpty(description.value)) {
+                Swal.fire({
+                    type: 'error',
+                    title: '  ... اوه',
+                    text: 'درخواست خودت رو کامل و دقیق وارد کن',
+                    confirmButtonText: 'باشه'
+                })
+            } else {
+                Email.send({
+                    SecureToken: "35a80d7b-2315-422e-a72c-bcdfbe8a3704",
+                    To: 'mohammad.masoudi59@gmail.com',
+                    From: "persiandesign.sender@gmail.com",
+                    Subject: name.value,
+                    Body: "تلفن : " + "<b>" + phone.value + "</b>" + "<br/> ایمیل : " + "<b>" + email.value + "</b>" + "<br/> ایدی تلگرام : " + "<b>" + telegram.value + "</b>" + "<br/> توضیحات :  <br/>" + description.value
+                }).then(
+                    message =>
+                        Swal.fire({
+                            position: 'center-center',
+                            type: 'success',
+                            title: '.پیام با موفقیت ارسال شد',
+                            showConfirmButton: false,
+                            timer: 2200
+                        }),
+                    name.value = "",
+                    phone.value = "",
+                    email.value = "",
+                    telegram.value = "",
+                    description.value = ""
+                    );
+            }
+        }
+    </script>
 </body>
 </html>

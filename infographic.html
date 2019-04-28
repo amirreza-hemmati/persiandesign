@@ -40,38 +40,31 @@
 			</nav>
 		</header>
 		<main>
-			<!-- bottom is html project for we call -->
-			<div id="parent-we-call">
-				<div id="we-call">
-					<p style="text-align: center;border-bottom: 1px solid white;margin-bottom: 20px;">
-						<span id="span-times-call"><i class="fas fa-times fa-1x times-callwe"></i></span>
-						در صورت بروز مشکل یا ثبت انتقادات و پیشنهادات باما در تماس باشید
-						<br>
-						سپاس فراوان
-						<br><br>
-					</p>
-					<p>
-						شماره تماس:
-						<br><br>
-						<p>
-							محمد مسعودی ( مدیر و برنامه نویس وب سایت ) : <span class="selection">09911729079</span>
-						</p>
-						<br>
-						<p>
-							امیررضا همتی (برنامه نویس وب سایت) : <span class="selection">09399440750</span>
-						</p>
-					</p>
-					<br>
-					<div id="button-time"><button id="send" class="send-order" type="button" onclick="sendMail();" name="">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							خروج
-						</button>
-					</div>
-				</div>
-			</div>
+            <!-- bottom is html project for we call -->
+            <div id="wecall-parent">
+                <div id="wecall">
+                    <span class="closefirst-wecall" style="cursor: pointer;font-size:30px;">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <br />
+                    <p id="ptag-one" style="text-align:center;"></p>
+                    <p id="ptag-two" class="align-center"><i class="fas fa-heart" style="color:red;"></i></p>
+                    <hr style="color:white" />
+                    <p id="ptag-three"></p>
+                    <br />
+                    <p id="number-phone1">09911729079</p>
+                    <p id="number-phone2">09399440750</p>
+                    <br />
+                    <button id="send" class="btn-close" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        خروج
+                    </button>
+                </div>
+            </div>
+
 
 			<section class="logo-decription">
 				<section class="single-service">
@@ -125,14 +118,18 @@
 		NProgress.done();
 
 		$(document).ready(function () {
-			$('#onclickcall').click(function (e) {
-				$('#we-call').fadeIn(1000);
-			});
+            $('#onclickcall').click(function (e) {
+                $("nav ul").removeClass("showmenu");
+                $('#wecall').fadeIn(1000);
+                $("#toggle").toggleClass("on")
+            });
 
-			$('#button-time , #span-times-call').click(function (e) {
-				$('#we-call').fadeOut(1000);
-			});
-			$("#toggle").click(function () {
+            $('.btn-close , .closefirst-wecall').click(function (e) {
+                $('#wecall').fadeOut(1000);
+            });
+
+            $("#toggle").click(function () {
+                $('#wecall').fadeOut(1000);
 				$(this).toggleClass("on");
 				$("nav ul").toggleClass("showmenu");
 				$("main , footer").toggleClass("opacity")

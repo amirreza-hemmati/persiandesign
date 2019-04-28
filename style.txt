@@ -1,0 +1,42 @@
+#parent-we-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#we-call {
+    background-color: rgb(11, 45, 68);
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    opacity: 0.9;
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+    display: none;
+}
+
+#we-call p::selection {
+    background-color: black;
+    color: white;
+}
+
+.selection:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.selection::selection {
+    background-color: black;
+    color: rgb(95, 85, 231);
+}
+
+.times-callwe {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+    cursor: pointer;
+}

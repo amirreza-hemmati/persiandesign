@@ -36,6 +36,31 @@
 		</nav>
 	</header>
 	<main>
+        <!-- bottom is html project for we call -->
+        <div id="wecall-parent">
+            <div id="wecall">
+                <span class="closefirst-wecall" style="cursor: pointer;font-size:30px;">
+                    <i class="fas fa-times"></i>
+                </span>
+                <br />
+                <p id="ptag-one" style="text-align:center;"></p>
+                <p id="ptag-two" class="align-center"><i class="fas fa-heart" style="color:red;"></i></p>
+                <hr style="color:white" />
+                <p id="ptag-three"></p>
+                <br />
+                <p id="number-phone1">09911729079</p>
+                <p id="number-phone2">09399440750</p>
+                <br />
+                <button id="send" class="btn-close" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    خروج
+                </button>
+            </div>
+        </div>
+
 		<section class="logo-decription">
 			<section class="single-service">
 				<section class="introduction-service">
@@ -76,7 +101,18 @@
 	NProgress.done();
 
 	$(document).ready(function () {
-			$("#toggle").click(function () {
+        $('#onclickcall').click(function (e) {
+            $("nav ul").removeClass("showmenu");
+            $('#wecall').fadeIn(1000);
+            $("#toggle").toggleClass("on")
+        });
+
+        $('.btn-close , .closefirst-wecall').click(function (e) {
+            $('#wecall').fadeOut(1000);
+        });
+
+        $("#toggle").click(function () {
+            $('#wecall').fadeOut(1000);
 				$(this).toggleClass("on");
 				$("nav ul").toggleClass("showmenu");
 				$("main , footer").toggleClass("opacity")

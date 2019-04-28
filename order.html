@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>تابینو - ثبت سفارش</title>
@@ -28,7 +28,7 @@
 				<li><a href="index.html">صفحه اصلی</a></li>
 				<li><a href="#">لیست خدمات</a></li>
 				<li><a href="order.html">سفارش پروژه</a></li>
-				<li><a href="#">تماس با ما</a></li>
+				<li><a href="#" id="onclickcall">تماس با ما</a></li>
 				<li><a href="#">درباره ما</a></li>
 			</ul>
 			<div id="toggle">
@@ -39,6 +39,40 @@
 		</nav>
 	</header>
 	<main>
+		<!-- bottom is html project for we call -->
+		<div id="parent-we-call">
+				<div id="we-call">
+					<p style="text-align: center;border-bottom: 1px solid white;margin-bottom: 20px;">
+						<span id="span-times-call"><i class="fas fa-times fa-1x times-callwe"></i></span>
+						در صورت بروز مشکل یا ثبت انتقادات و پیشنهادات باما در تماس باشید
+						<br>
+						سپاس فراوان
+						<br><br>
+					</p>
+					<p>
+						شماره تماس:
+						<br><br>
+						<p>
+							محمد مسعودی ( مدیر و برنامه نویس وب سایت ) : <span class="selection">09911729079</span>
+						</p>
+						<br>
+						<p>
+							امیررضا همتی (برنامه نویس وب سایت) : <span class="selection">09399440750</span>
+						</p>
+					</p>
+					<br>
+					<div id="button-time">
+						<button id="send" class="button-time" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							خروج
+						</button>
+					</div>
+				</div>
+			</div>
+
 		<h2 class="introduction-title">فرم ثبت سفارش</h2>
 		<section class="contact-form">
 			<form enctype="text/plain">
@@ -86,6 +120,14 @@
 	NProgress.configure({ parent: 'body' });
 	NProgress.done();
 	$(document).ready(function () {
+		$('#onclickcall').click(function (e) {
+				$('#we-call').fadeIn(1000);
+			});
+
+			$('#button-time , #span-times-call').click(function (e) {
+				e.preventDefault
+				$('#we-call').fadeOut(1000);
+			});
 			$("#toggle").click(function () {
 				$(this).toggleClass("on");
 				$("nav ul").toggleClass("showmenu");

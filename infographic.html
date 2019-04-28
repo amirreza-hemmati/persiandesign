@@ -1,81 +1,137 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>تابینو - اینفوگرافیک </title>
 	<meta charset="UTF-8">
 	<link rel="icon" href="assets/images/favicon.png">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/nprogress.css">
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:title" content="طراحی اینفوگرافیک">
 	<meta property="og:site_name" content="تابینو">
 	<meta property="og:url" content="http://persiandesign.ml">
-	<meta property="og:description" content="تیم تابینو آماده ارائه خدمات طراحی کارت ویزیت، بنر، اینفوگرافیک ،طراحی سایت،برنامه نویسی به شما عزیزان می باشد.">
+	<meta property="og:description"
+		content="تیم تابینو آماده ارائه خدمات طراحی کارت ویزیت، بنر، اینفوگرافیک ،طراحی سایت،برنامه نویسی به شما عزیزان می باشد.">
 	<meta property="og:type" content="website">
 	<meta name="google-site-verification" content="LNZMRznnHkF-IrpATS1bKfbfq8U4Elf19b7-M0W7zPk" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
 	<div class="main-container">
 		<header>
-		<nav>
-			<ul>
-                <li><a href="index.html">صفحه اصلی</a></li>
-				<li><a href="#">لیست خدمات</a></li>
-				<li><a href="order.html">سفارش پروژه</a></li>
-				<li><a href="#">تماس با ما</a></li>
-				<li><a href="#">درباره ما</a></li>
-			</ul>
-			<div id="toggle">
-			  <div class="one"></div>
-			  <div class="two"></div>
-			  <div class="three"></div>
+			<nav>
+				<ul>
+					<li><a href="index.html">صفحه اصلی</a></li>
+					<li><a href="#">لیست خدمات</a></li>
+					<li><a href="order.html">سفارش پروژه</a></li>
+					<li><a href="#" id="onclickcall">تماس با ما</a></li>
+					<li><a href="#">درباره ما</a></li>
+				</ul>
+				<div id="toggle">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- bottom is html project for we call -->
+			<div id="parent-we-call">
+				<div id="we-call">
+					<p style="text-align: center;border-bottom: 1px solid white;margin-bottom: 20px;">
+						<span id="span-times-call"><i class="fas fa-times fa-1x times-callwe"></i></span>
+						در صورت بروز مشکل یا ثبت انتقادات و پیشنهادات باما در تماس باشید
+						<br>
+						سپاس فراوان
+						<br><br>
+					</p>
+					<p>
+						شماره تماس:
+						<br><br>
+						<p>
+							محمد مسعودی ( مدیر و برنامه نویس وب سایت ) : <span class="selection">09911729079</span>
+						</p>
+						<br>
+						<p>
+							امیررضا همتی (برنامه نویس وب سایت) : <span class="selection">09399440750</span>
+						</p>
+					</p>
+					<br>
+					<div id="button-time"><button id="send" class="send-order" type="button" onclick="sendMail();" name="">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							خروج
+						</button>
+					</div>
+				</div>
 			</div>
-		</nav>
-	</header>
-	<main>
-		<section class="logo-decription">
-			<section class="single-service">
-				<section class="introduction-service">
-					<i class="fa fa-drafting-compass icon"></i>
-					<h2 class="introduction-title">اینفوگرافیک</h2>
-				</section>
-				<section class="introduction-service">
-					<p>
-						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-					</p>
-					<p>
-						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-					</p>
-				</section>
-				<a href="order.html">
-				<button id="send" class="send-order" type="button" name="">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						ثبت سفارش
-					</button>
-				</a>
-			</section>
-		</section>
-	</main>
-	<footer>
-		<p>  تمامی حقوق برای تیم تابینو محفوظ می باشد. &copy;</p>
-	</footer>
-	</div>
-<script src="assets/js/nprogress.js"></script>
-<script>
-	NProgress.start();
-	NProgress.set(0.4);
-	NProgress.inc();
-	NProgress.configure({ ease: 'ease', speed: 2000 });
-	NProgress.configure({ parent: 'body' });
-	NProgress.done();
 
-	$(document).ready(function () {
+			<section class="logo-decription">
+				<section class="single-service">
+					<section class="introduction-service">
+						<i class="fa fa-drafting-compass icon"></i>
+						<h2 class="introduction-title">اینفوگرافیک</h2>
+					</section>
+					<section class="introduction-service">
+						<p>
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+							متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+							متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت
+							فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+							طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود
+							در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
+							سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+						</p>
+						<p>
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+							متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+							متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت
+							فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+							طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود
+							در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
+							سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+						</p>
+					</section>
+					<a href="order.html">
+						<button id="send" class="send-order" type="button" name="">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							ثبت سفارش
+						</button>
+					</a>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<p> تمامی حقوق برای تیم تابینو محفوظ می باشد. &copy;</p>
+		</footer>
+	</div>
+	<script src="assets/js/nprogress.js"></script>
+	<script>
+		NProgress.start();
+		NProgress.set(0.4);
+		NProgress.inc();
+		NProgress.configure({ ease: 'ease', speed: 2000 });
+		NProgress.configure({ parent: 'body' });
+		NProgress.done();
+
+		$(document).ready(function () {
+			$('#onclickcall').click(function (e) {
+				$('#we-call').fadeIn(1000);
+			});
+
+			$('#button-time , #span-times-call').click(function (e) {
+				$('#we-call').fadeOut(1000);
+			});
 			$("#toggle").click(function () {
 				$(this).toggleClass("on");
 				$("nav ul").toggleClass("showmenu");
@@ -87,6 +143,7 @@
 				})
 			});
 		});
-</script>
+	</script>
 </body>
+
 </html>
